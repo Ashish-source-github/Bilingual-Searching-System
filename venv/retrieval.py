@@ -8,17 +8,6 @@ from nltk.tokenize import word_tokenize
 def tokenize(line, tokenizer=word_tokenize):
     return [token for token in tokenizer(line.lower())]
 
-# DEVELOPMENT_DOCS = './devel.docs' #Data file for IR engine development
-
-# DEVELOPMENT_QUERIES = './devel.queries' #Data file containing queries in German
-
-# DEVELOPMENT_QREL = './devel.qrel' #Data file containing a relevance score or query-doc pairs
-
-# BITEXT_ENG = './bitext.en' #Bitext data file in English for translation engine and language model development
-
-# BITEXT_DE = './bitext.de' #Bitext data file in German
-
-# NEWSTEST_ENG = './newstest.en' #File for testing language model
 
 stopwords = set(nltk.corpus.stopwords.words('english')) #converting stopwords to a set for faster processing in the future.
 stemmer = nltk.stem.PorterStemmer() 
